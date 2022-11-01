@@ -8,6 +8,7 @@ import random
 # class definition
 class Coin:
     # the ini function initializes the sideup of the coin to 'heads'
+    # the sideup data attribute is public
     def __init__(self):
         self.sideup = 'Heads'
 
