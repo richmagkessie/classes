@@ -25,19 +25,19 @@ class AutoMobile:
         self.__distance = distance
 
     # methods to get attributes
-    def get_model(self, model):
+    def get_model(self):
         return self.__model
 
-    def get_make(self, make):
+    def get_make(self):
         return self.__make
 
-    def get_price(self, price):
+    def get_price(self):
         return self.__price
 
-    def get_distance(self, distance):
+    def get_distance(self):
         return self.__distance
 
-# This program demonstrates inheritance. It is a Car class and a subclass of AutoMobile class 
+# This program demonstrates inheritance. It is a Car class and a subclass of AutoMobile class
 
 # Car class
 class Car(AutoMobile):
