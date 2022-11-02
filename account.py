@@ -14,7 +14,7 @@ class BackAccount:
     # withdraw method
     def withdraw(self, amount):
         if __balance >= amount:
-            self.__balance -+ amount
+            self.__balance -= amount
         else:
             print('Error: Insufficient funds.')
 
