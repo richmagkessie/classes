@@ -3,7 +3,7 @@
 # email: kessierich.mag@gmail.com
 
 #class def
-class BackAccount:
+class BankAccount:
     def __init__(self, balance):
         self.__balance = balance
 
@@ -13,7 +13,7 @@ class BackAccount:
 
     # withdraw method
     def withdraw(self, amount):
-        if __balance >= amount:
+        if self.__balance >= amount:
             self.__balance -= amount
         else:
             print('Error: Insufficient funds.')
