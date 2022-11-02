@@ -35,4 +35,24 @@ class AutoMobile:
         return self.__price
 
     def get_distance(self, distance):
-        return self.__distance 
+        return self.__distance
+
+# This program demonstrates inheritance. It is a Car class and a subclass of AutoMobile class 
+
+# Car class
+class Car(AutoMobile):
+    # the init method accepts args for the cars make, model, distance, price
+    def __init__(self, make, model, price, distance, doors):
+        #call the init method belonging to the superclass and pass all the req args
+        AutoMobile.__init__(self, model, make, price, distance)
+
+        # initialize the door attributes for the car
+        self.__doors = doors
+
+    # set doors
+    def set_doors(self, doors):
+        self.__doors = doors
+
+    # method to get doors
+    def get_doors(self):
+        self.__doors
